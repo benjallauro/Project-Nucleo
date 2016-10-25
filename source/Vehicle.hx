@@ -20,7 +20,7 @@ class Vehicle extends FlxSprite
 	override public function update(elapsed:Float):Void
 	{
 		super.update(elapsed);
-	if (FlxG.keys.justPressed.LEFT && x > 15)
+	if (FlxG.keys.justPressed.LEFT && x >= 150)
 			x -= 150;
 		if (FlxG.keys.justPressed.RIGHT && x < 600 - width)
 			x += 150;
